@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    //   Seleccionar el elemento con id primer-boton utilizando el método getElementById
+    // Al hacer click en el boton seleccionado previamente debe mostrar una alerta con el siguiente mensaje: 'Hiciste click en un botón'
+    // Utilizar el método onclick del elemento
+
+    window.onload = function() {
+      let boton = document.getElementById('primer-boton');
+      boton.onclick = function() {
+        alert('Hiciste click en un boton');
+      }
+    }
+
+  </script>
+</head>
+<body>
+  <ul></ul>
+  <button id="primer-boton">Haceme Click!!</button>
+  <button id="segundo-boton">Sacar handler</button>
+  <a href="http://google.com">Hipervinculo controlado por ECMAScript</a>
+</body>
+</html>

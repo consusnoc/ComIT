@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    //   Seleccionar el elemento con id segundo-boton utilizando el método getElementById
+    // Extraer el callback del método addEventListener del botón con id primer-boton y crear una función con el nombre saludar
+    // Cambiar el llamado al método addEventListener para que use la función saludar
+    // Agregar un manejador de evento al botón con id segundo-boton usando onclick
+    // Al hacer click en el botón con id segundo-boton tiene que sacar el event listener que tiene el botón con id primer-boton
+    // Probar el código haciendo click en el primer botón y ver que muestre un alert con el mensaje correspondiente
+    // Hacer click en el segundo botón para remover el event listener que tiene asignado el primer botón
+    // Hacer click en el primer botón y ver que ya no muestra un alert ya que este botón dejó de estar controlado
+
+    window.onload = function() {
+      let boton = document.querySelector('primer-boton');
+      boton.addEventListener('click', function(){
+        alert('Hiciste click en un boton controlado con addEventListener');
+      });
+
+      let segundoBoton = document.getElementById('segundo-boton');
+    }
+
+  </script>
+</head>
+<body>
+  <button id="primer-boton">Haceme Click!!</button>
+  <button id="segundo-boton">Sacar handler</button>
+  <a href="http://google.com">Hipervinculo controlado por ECMAScript</a>
+  <ul>
+      <li>Bananas</li>
+      <li>Manzanas</li>
+      <li>Peras</li>
+      <li>Huevos</li>
+      <li>Tomates</li>
+      <li>Lechuga</li>
+      <li>Leche</li>
+    </ul>
+</body>
+</html>

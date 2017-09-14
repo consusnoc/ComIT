@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <style>
+            a {
+            font-family: Arial, Helvetica, sans-serif;
+            }        
+            .menu {
+            display: block;
+            width: 400px;
+            border: 1px solid black;
+            background-color: #eee;
+            padding: 5px 0 5px 10px; 
+            }
+            a.menu {
+            color: black;
+            text-decoration: none;
+            }
+            a.menu:hover {
+            background-color: #DDD;
+            }
+            a.verde {
+            color: green;
+            }
+            a.azul {
+            color: blue;
+            }
+            a.rojo {
+            color: red;
+            }
+        </style>
+        <script>
+            /*Crear un documento con el nombre ej16.html
+            Copiar el contenido del documento atributos.html y pegarlo en el archivo index.html
+            Agregar la etiqueta script
+            Seleccionar el primer hipervinculo
+            Mostrar en la consola del browser el valor que tiene asignado el atributo class*/
+            window.onload = function() { 
+                const hipervinculo = document.querySelectorAll('a');
+                console.log(hipervinculo[0]);
+                let clase = hipervinculo[0].className;
+                console.log(clase);
+                
+            }
+
+        </script>
+    </head>
+    <body>
+        <a href="#" class="menu">Link 1</a>
+        <a href="#" class="menu">Link 2</a>
+        <a href="#" class="menu">Link 3</a>
+        <a href="#" class="menu">Link 4</a>
+        <a href="#" class="menu">Link 5</a>
+    </body>
+</html>
